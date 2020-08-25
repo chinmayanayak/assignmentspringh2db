@@ -1,0 +1,10 @@
+com\marsassignment\dto\PersonDTO.class
+com\marsassignment\controller\AddressController.class
+com\marsassignment\exception\AddressNotFoundException.class
+com\marsassignment\repository\AddressRepository.class
+com\marsassignment\controller\PersonController.class
+com\marsassignment\repository\PersonRepository.class
+com\marsassignment\exception\CustomGlobalExceptionHandler.class
+com\marsassignment\exception\PersonNotFoundException.class
+com\marsassignment\dto\AddressDTO.class
+com\marsassignment\StartApplication.class

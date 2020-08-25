@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.marsassignment.test.PersonControllerRestTemplateTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 20.664 s <<< FAILURE! - in com.marsassignment.test.PersonControllerRestTemplateTest
+update_person_OK(com.marsassignment.test.PersonControllerRestTemplateTest)  Time elapsed: 0.131 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200 OK> but was:<404 NOT_FOUND>
+	at com.marsassignment.test.PersonControllerRestTemplateTest.update_person_OK(PersonControllerRestTemplateTest.java:149)
+
+find_allPerson_OK(com.marsassignment.test.PersonControllerRestTemplateTest)  Time elapsed: 0.055 s  <<< FAILURE!
+org.mockito.exceptions.verification.TooLittleActualInvocations: 
+
+personRepository bean.findAll();
+Wanted 2 times:
+-> at com.marsassignment.test.PersonControllerRestTemplateTest.find_allPerson_OK(PersonControllerRestTemplateTest.java:86)
+But was 1 time:
+-> at com.marsassignment.controller.PersonController.findAllPerson(PersonController.java:25)
+
+	at com.marsassignment.test.PersonControllerRestTemplateTest.find_allPerson_OK(PersonControllerRestTemplateTest.java:86)
+
+find_personIdNotFound_404(com.marsassignment.test.PersonControllerRestTemplateTest)  Time elapsed: 0.035 s  <<< FAILURE!
+java.lang.AssertionError: 
+message
+Expected: Person id not found : 5
+     got: Person id not found : 9
+ ; path
+Expected: /persons/5
+     got: /person/9
+
+	at com.marsassignment.test.PersonControllerRestTemplateTest.find_personIdNotFound_404(PersonControllerRestTemplateTest.java:97)
+
